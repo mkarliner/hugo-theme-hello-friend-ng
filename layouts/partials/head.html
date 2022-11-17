@@ -1,3 +1,9 @@
+
+        <!-- aaaaa -->
+        {{ if .Site.Params.GoogleAnalyticsID }}
+        {{ partial "analytics-gtag.html" . }}
+        {{ end }}
+
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,6 +13,7 @@
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
 <link rel="canonical" href="{{ .Permalink }}" />
+
 
 {{ block "title" . }}
     <title>
